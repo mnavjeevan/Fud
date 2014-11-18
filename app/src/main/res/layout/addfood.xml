@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/ivImage"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:src="@drawable/thewiggles" />
+
+
+    <RatingBar
+        android:id="@+id/rbRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ratingBarAction"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/bPicture"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Take Picture" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/bSubmit"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:onClick="submitIntent"
+        android:text="Log It" />
+</LinearLayout>
